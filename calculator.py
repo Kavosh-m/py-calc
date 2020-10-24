@@ -2,7 +2,6 @@ from tkinter import *
 
 root = Tk()
 root.title('A Simple Calculator')
-#root.geometry('500x600')
 width=500
 height=366
 screenwidth = root.winfo_screenwidth()
