@@ -2,7 +2,8 @@ from tkinter import *
 
 root = Tk()
 root.title('A Simple Calculator')
-width=500
+#root.geometry('500x600')
+width=524
 height=366
 screenwidth = root.winfo_screenwidth()
 screenheight = root.winfo_screenheight()
@@ -15,8 +16,8 @@ isPushed = StringVar()
 #print(isPushed.get() == '')
 var = StringVar()
 #screenFrame = Frame(root)
-screenLabel = Label(root, text='', width=20, height=3,padx=150, pady=13, bg='black',
-                    fg='white', font=('Times', 15), textvariable=var)
+screenLabel = Label(root, text='', width=20, height=3,padx=150, pady=13, bg='#ffe6e6',
+                    fg='#332600', font=('Times', 15), textvariable=var)
 
 #define commands
 #numbers
@@ -153,27 +154,27 @@ def decimal_point():
 
 #define Buttons
 #numbers
-num_1 = Button(root, text='1', font=('Times', 20), command=one)
-num_2 = Button(root, text='2', font=('Times', 20), command=two)
-num_3 = Button(root, text='3', font=('Times', 20), command=three)
-num_4 = Button(root, text='4', font=('Times', 20), command=four)
-num_5 = Button(root, text='5', font=('Times', 20), command=five)
-num_6 = Button(root, text='6', font=('Times', 20), command=six)
-num_7 = Button(root, text='7', font=('Times', 20), command=seven)
-num_8 = Button(root, text='8', font=('Times', 20), command=eight)
-num_9 = Button(root, text='9', font=('Times', 20), command=nine)
-num_0 = Button(root, text='0', font=('Times', 20), command=zero)
+num_1 = Button(root, text='1', bg='#1a000d', fg='#33ffff', font=('Times', 20), command=one)
+num_2 = Button(root, text='2', bg='#1a000d', fg='#33ffff', font=('Times', 20), command=two)
+num_3 = Button(root, text='3', bg='#1a000d', fg='#33ffff', font=('Times', 20), command=three)
+num_4 = Button(root, text='4', bg='#1a000d', fg='#33ffff', font=('Times', 20), command=four)
+num_5 = Button(root, text='5', bg='#1a000d', fg='#33ffff', font=('Times', 20), command=five)
+num_6 = Button(root, text='6', bg='#1a000d', fg='#33ffff', font=('Times', 20), command=six)
+num_7 = Button(root, text='7', bg='#1a000d', fg='#33ffff', font=('Times', 20), command=seven)
+num_8 = Button(root, text='8', bg='#1a000d', fg='#33ffff', font=('Times', 20), command=eight)
+num_9 = Button(root, text='9', bg='#1a000d', fg='#33ffff', font=('Times', 20), command=nine)
+num_0 = Button(root, text='0', bg='#1a000d', fg='#33ffff', font=('Times', 20), command=zero)
 
 #operations
-addition = Button(root, text='+', font=('Times', 20), command=add)
-subtraction = Button(root, text='-', font=('Times', 20), command=subtract)
-multiplication = Button(root, text=chr(215), font=('Times', 20), command=multiply)
-division = Button(root, text=chr(247), font=('Times', 20), command=divide)
-equal = Button(root, text='=', font=('Times', 20), command=calculate)
+addition = Button(root, text='+', bg='#1a000d', fg='#33ffff', font=('Times', 20), command=add)
+subtraction = Button(root, text='-', bg='#1a000d', fg='#33ffff', font=('Times', 20), command=subtract)
+multiplication = Button(root, text=chr(215), bg='#1a000d', fg='#33ffff', font=('Times', 20), command=multiply)
+division = Button(root, text=chr(247), bg='#1a000d', fg='#33ffff', font=('Times', 20), command=divide)
+equal = Button(root, text='=', bg='#1a000d', fg='#33ffff', font=('Times', 20), command=calculate)
 
 #functional Buttons
-clear = Button(root, text='C', font=('Times', 20), command=clean)
-period = Button(root, text='.', font=('Times', 20), command=decimal_point)
+clear = Button(root, text='C', bg='#1a000d', fg='#33ffff', font=('Times', 20), command=clean)
+period = Button(root, text='.', bg='#1a000d', fg='#33ffff', font=('Times', 20), command=decimal_point)
 
 #Packing Buttons into the form
 #Screen of the calculator
