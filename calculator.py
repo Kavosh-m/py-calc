@@ -150,7 +150,7 @@ def calculate():
     #make the operation
     if s[1] == '+':
         var.set('{:,}'.format(x + y))
-    elif s[1] == '-':
+    elif s[1] == '−':
         var.set('{:,}'.format(x - y))
     elif s[1] == chr(215):
         var.set('{:,}'.format(x * y))
